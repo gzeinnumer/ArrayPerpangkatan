@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         int[] dataArray = new int[]{1,2,3,4,5};
+        int[] newArrayData = new int[5];
 
         int defaultNumber = 2;
 
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         for (int i=0; i<dataArray.length; i++){
             for (int k=0; k<dataArray[i]; k++){
                 value = value * defaultNumber;
+                //new array
+                newArrayData[i] = value;
             }
             Log.d(TAG, "onCreate: "+ value);
             value = 1;
